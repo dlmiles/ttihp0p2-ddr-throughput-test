@@ -6,6 +6,8 @@
 
 `default_nettype wire
 
+`define TECH_IHP130 1
+
 module invgate(input A, output Y);
  `ifdef COCOTB_SIM
     assign #1 Y = ~A;
