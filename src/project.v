@@ -81,7 +81,8 @@ module dff(input d,rst_n,clk, output q);
         .Q(q)
     );
   `elsif TECH_IHP130
-    sg13g2_dfrbp_2 dfrbp(
+    // sg13g2_dfrbp_2 is -dont_use as this time ~Nov2024
+    sg13g2_dfrbp_1 dfrbp(
         .D(d),
         .RESET_B(rst_n),
         .CLK(clk),
